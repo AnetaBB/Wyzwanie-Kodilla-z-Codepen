@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Roboto:300,400,500,700,900,900i&subset=latin-ext');
 $color-main: #82589F;
-$color-background: #f0f3f3;
+$color-background: #c7ecee;
 $color-text: #444444;
+$font-text: 'Roboto', sans-serif;
+$font-header: 'Domine', serif;
 * {
   box-sizing: border-box;
 }
@@ -15,6 +18,7 @@ body, html {
   line-height: 1.7;
   margin: 0;
   height: 100%;
+  font-family: $font-text;
 }
 
 a, a:hover {
@@ -57,6 +61,7 @@ section {
   font-weight: normal;
   color: #0984e3;
   font-size: 50px;
+  font-family: $font-header;
 }
 
 .main-subtitle {
@@ -64,16 +69,69 @@ section {
   font-weight: normal;
   color: #fd79a8;
   font-size: 40px;
+  font-family: $font-header;
 }
 .btn {
   padding: 18px 24px 18px 24px;
   font-size: 14px;
   background-color: $color-main;
-  color: #82589F;
+  color: #ffffff;
 }
 
 .btn:hover {
   background-color: darken($color-main, 5%);
-  color: #82589F;  
+  color: #ffffff;  
  box-shadow: 2px 4px 10px #34495e;
+}
+.section-title {
+  color: #D980FA;
+  background-color: #FDA7DF;
+  font-family: $font-text;
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-weight: 200px;
+}
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '***';
+  width: 360px;
+  height: 5px;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -190px;  
+}
+.about {
+  background-color: $color-background;
+}
+.section-intro {
+  margin: 36px 0 0 0;
+  color: #130f40;
+  text-align: center;
+}
+.feature {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+} 
+.feature i {
+  width: 100px;
+height: 100px;
+line-height: 100px;
+  background-color: #c7ecee;
+  color: #be2edd;
+  border-radius: 15px 50px;
+  font-size: 16px;
+  
+}
+.features-wraper {
+  font-family: $font-text;
+  margin: 24px 0 0 0;
+}
+.feature-title {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+  font-family: $font-text;
 }
