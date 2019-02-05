@@ -110,6 +110,7 @@ section {
   color: #130f40;
   text-align: center;
 }
+
 .feature {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
@@ -134,4 +135,23 @@ line-height: 100px;
   margin: 24px 0 0 0;
   padding: 0 24px;
   font-family: $font-text;
+}
+.statement {
+background-image: url('https://i.postimg.cc/xj4DGYbQ/adorable-beautiful-blur-573298.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: flex;
+ max-hight: 100%;
+ width: 100%; 
+  vertical-align: middle;
+}
+.statement p {
+  margin: 0;
+  text-align: center;
+  color: #f6e58d;
+  font-size: 50px;
+}
+.quotes{
+  background-color: $color-background;
 }
